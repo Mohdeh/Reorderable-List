@@ -1,0 +1,107 @@
+[draggable] {
+
+    -moz-user-select: none;
+  
+    -khtml-user-select: none;
+  
+    -webkit-user-select: none;
+  
+    user-select: none;
+  
+    /* Required to make elements draggable in old WebKit */
+  
+    -khtml-user-drag: element;
+  
+    -webkit-user-drag: element;
+  
+  }
+  
+  .listItem {
+  
+    padding: 10px 10px 10px 10px;
+  
+    margin: 3px;
+  
+    background-color: silver;
+  
+    color: white;
+  
+    width: 150px;
+  
+    border-top: thick solid white;
+  
+    border-top-width: 1px;
+  
+    -webkit-transition: all 0.2s ease-out;
+  
+    -moz-transition: all 0.2s ease-out;
+    
+    -ms-transition: all 0.2s ease-out;
+  
+    -o-transition: all 0.2s ease-out;
+  
+    transition: all 0.2s ease-out;
+  
+  }
+  
+  li:before {
+    content: "• ";
+    padding-right: 5px;
+    background-color: red;
+  }
+  
+  li:nth-child(1):before {
+    background-color: orange;
+  }
+  
+  li:nth-child(2):before {
+    background-color: yellow;
+  }
+  
+  li:nth-child(3):before {
+    background-color: red;
+  }
+  
+  li:nth-child(4):before {
+    background-color: green;
+  }
+  
+  .dataTransferClass {
+  
+    background-color: brown;
+  
+  }
+  
+  .dragStartClass {
+  
+    opacity: 0;
+  
+    -webkit-transition: all 0.2s ease-out;
+    
+    -moz-transition: all 0.2s ease-out;
+  
+    -ms-transition: all 0.2s ease-out;
+  
+    -o-transition: all 0.2s ease-out;
+  
+    transition: all 0.2s ease-out;
+  
+  }
+  
+  .listItem.over {
+  
+    border-top: thick solid white;
+  
+    border-top-width: 50px;
+  
+    -webkit-transition: all 0.2s ease-out;
+  
+    -moz-transition: all 0.2s ease-out;
+  
+    -ms-transition: all 0.2s ease-out;
+  
+    -o-transition: all 0.2s ease-out;
+  
+    transition: all 0.2s ease-out;
+  
+  }
